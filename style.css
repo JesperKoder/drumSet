@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(pics/danny-unsplash.jpg);
+  background-size: cover;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+h1 {
+  color: red;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  text-align: center;
+}
+
+.drum__top {
+  background-color: black;
+  height: 50px;
+  width: 200px;
+  margin: auto;
+  border: 2px solid rgb(244, 179, 40);
+  border-bottom: none;
+}
+
+h4 {
+  color: rgb(244, 179, 40);
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+.drum__container {
+  height: 200px;
+  width: 400px;
+  background-color: black;
+  border: 2px solid rgb(244, 179, 40);
+  border-radius: 10px;
+  margin: 0px auto 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.25em;
+}
+
+.drum__container > button {
+  background-color: rgb(244, 179, 40);
+  border: 1px solid silver;
+  border-radius: 50%;
+  margin: 10px;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  transition: transform 0.1s ease-in-out;
+}
+
+.drum__container > button.pressed {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgb(255, 255, 255),
+  4px 4px 7px rgb(240, 1, 1);
+}
